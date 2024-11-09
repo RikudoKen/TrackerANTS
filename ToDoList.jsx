@@ -21,9 +21,6 @@ const styles = StyleSheet.create({
     borderBottomWidth: 1,
     borderColor: '#ccc',
   },
-  completed: {
-    backgroundColor: '#e0e0e0',
-  },
   taskText: {
     fontSize: 16,
   },

@@ -10,10 +10,16 @@ function App() {
     'Walk dog'
   ]);
 
+  // Implement the addTask function to add a new task to the tasks array
+  const addTask = (taskText) => {
+    setTasks([...tasks, taskText]);
+  };
+
   return (
     <SafeAreaView style={styles.container}>
+      {/* Pass the tasks array to ToDoList and the addTask function to ToDoForm */}
       <ToDoList tasks={tasks} />
-      <ToDoForm />
+      <ToDoForm addTask={addTask} />
     </SafeAreaView>
   );
 }
